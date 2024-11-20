@@ -1,7 +1,7 @@
 class Patient {
     constructor(name) {
         this.name = name;
-        this.id = Math.random() * 1000;
+        this.id = parseInt(Math.random() * 1000);
     }
 }
 
