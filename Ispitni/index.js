@@ -62,13 +62,13 @@ class EHospital {
         this.number++;
     }
 
-    test_patient(obj) {
-        var date1 = obj.date;
+    test_patient(patient) {
+        var date1 = patient.date;
         var date2 = Date.now();
         var diffTime = Math.abs(date2 - date1);
         var diffDays = Math.ceil(diffTime/(1000 * 60 * 60 * 24));
         if (diffDays = 15) {
-            obj.positive = false;
+            patient.positive = false;
         }
     }
 
