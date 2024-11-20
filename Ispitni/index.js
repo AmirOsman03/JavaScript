@@ -21,9 +21,9 @@ class CovidPositive extends Patient {
 
     risk() {
         if (this.symptoms && this.respiratoryIssue && this.hyperqlycaemia) {
-            if (this.gender > 75) {
+            if (this.age > 75) {
                 console.log(`Patient ${this.id} ${this.name} is with high risk`)
-            } else if (this.gender > 50 && this.gender === 'male') {
+            } else if (this.age > 50 && this.gender === 'male') {
                 console.log(`Patient ${this.id} ${this.name} is with high risk`)
             } else {
                 console.log(`Patient ${this.id} ${this.name} is with average risk`)
